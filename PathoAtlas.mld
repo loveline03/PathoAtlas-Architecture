@@ -1,0 +1,2438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{7DDBFE29-E9FC-4A62-BA14-6D22C1E5C328}" Label="" LastModificationDate="1780141828" Name="PathoAtlas" Objects="82" Symbols="19" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" signature="LDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>7DDBFE29-E9FC-4A62-BA14-6D22C1E5C328</a:ObjectID>
+<a:Name>PathoAtlas</a:Name>
+<a:Code>PATHOATLAS</a:Code>
+<a:CreationDate>1780141799</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141828</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {046F5CA2-243D-42C6-A279-0DEB16756D55}
+DAT 1780141828</a:History>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Logical options]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+EnableRequirements=No
+Notation=4
+RlshUnique=Yes
+DefaultDttp=
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyExat=No
+DomnCopyMand=No
+DttpFullName=Yes
+RlshMigrateDomain=Yes
+RlshMigrateCheck=Yes
+RlshMigrateRule=Yes
+RlshMigrateExtd=Yes
+RlshAllowNN=No
+FKNameTemplate=%.3:PARENT%_%ATTRIBUTE%
+FKNameTemplateUsage=No
+
+[ModelOptions\Logical options\NamingOptionsTemplates]
+
+[ModelOptions\Logical options\ClssNamingOptions]
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO]
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=&quot;\/:*?&lt;&gt;|&quot;
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_. &quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Cdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+
+[ModelOptions\Generate\Pdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+BuildTrgr=No</a:ModelOptionsText>
+<c:GenerationOrigins>
+<o:Shortcut Id="o3">
+<a:ObjectID>ABC777AC-E963-488F-B4A2-C01C91652E3C</a:ObjectID>
+<a:Name>PathoAtlas</a:Name>
+<a:Code>PATHOATLAS</a:Code>
+<a:CreationDate>1780141828</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141828</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:TargetStereotype/>
+<a:TargetID>046F5CA2-243D-42C6-A279-0DEB16756D55</a:TargetID>
+<a:TargetClassID>1E597170-9350-11D1-AB3C-0020AF71E433</a:TargetClassID>
+</o:Shortcut>
+</c:GenerationOrigins>
+<c:LogicalDiagrams>
+<o:LogicalDiagram Id="o4">
+<a:ObjectID>77E83233-BD8A-4AE9-A48A-79B42DB526C8</a:ObjectID>
+<a:Name>Diagramme_1</a:Name>
+<a:Code>DIAGRAMME_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {069934F7-6DE8-4546-9F0B-40667412B86A}
+DAT 1780141828</a:History>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\LDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Constrain Labels=Yes
+Display Grid=No
+Show Page Delimiter=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+CompDark=0
+
+[DisplayPreferences\Object]
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ExtendedObject.Comment=No
+ExtendedObject.IconPicture=No
+ExtendedObject_SymbolLayout=
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+ExtendedLink_SymbolLayout=
+FileObject.Stereotype=No
+FileObject.DisplayName=Yes
+FileObject.LocationOrName=No
+FileObject.IconPicture=No
+FileObject.IconMode=Yes
+FileObject_SymbolLayout=
+PckgStrn=Yes
+Package.Comment=No
+Package.IconPicture=No
+Package_SymbolLayout=
+Display Model Version=Yes
+EnttAttr=Yes
+PentMode=0
+PentNb=5
+EnttDttp=Yes
+EnttDomn=Yes
+EnttShowDomn=No
+EnttMand=Yes
+EnttCIdf=Yes
+EnttKeyI=Yes
+PentStrn=Yes
+IdtfStrn=Yes
+RlshName=Yes
+RlshRole=Yes
+RlshCard=No
+RlshDmnt=Yes
+RlshStrn=Yes
+InhrName=Yes
+InhrStrn=Yes
+Entity.IconPicture=No
+Entity_SymbolLayout=
+Inheritance.IconPicture=No
+Inheritance_SymbolLayout=
+EnttStrn=Yes
+EnttCmmt=No
+Association.IconPicture=No
+Association_SymbolLayout=
+AsscStrn=Yes
+AsscCmmt=No
+AsscAttr=Yes
+AsscDttp=Yes
+AsscDomn=Yes
+AsscShowDomn=No
+AsscMand=Yes
+AsscDLim=Yes
+AsscNb=5
+PassStrn=1
+LinkRole=Yes
+LinkCard=Yes
+LinkStrn=Yes
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=64
+Brush gradient color=192 192 192
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 255 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+CENTERFont=Arial,8,N
+CENTERFont color=0, 0, 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+OBJSTRNFont=Arial,8,N
+OBJSTRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LCNMFont=Arial,8,N
+LCNMFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=-1
+
+[DisplayPreferences\Symbol\LDMPCKG]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMENTT]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AttributesFont=Arial,8,N
+AttributesFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+EntityPrimaryAttributeFont=Arial,8,U
+EntityPrimaryAttributeFont color=0 0 0
+EntityForeignAttributeFont=Arial,8,N
+EntityForeignAttributeFont color=0 0 0
+IdentifiersFont=Arial,8,N
+IdentifiersFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=234 181 21
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMRLSH]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+NAMAFont=Arial,8,N
+NAMAFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMINHR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AutoAdjustToText=No
+Keep aspect=No
+Keep center=No
+Keep size=Yes
+Width=1575
+Height=1000
+Brush color=250 241 211
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMLINH]
+Line style=2
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+OBJXSTRFont=Arial,8,N
+OBJXSTRFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\CDMPCKG]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\ENTT]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AttributesFont=Arial,8,N
+AttributesFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+EntityPrimaryAttributeFont=Arial,8,U
+EntityPrimaryAttributeFont color=0 0 0
+IdentifiersFont=Arial,8,N
+IdentifiersFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\RLSH]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+NAMAFont=Arial,8,N
+NAMAFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\ASSC]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AttributesFont=Arial,8,N
+AttributesFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3000
+Brush color=208 208 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LINK]
+ROLEFont=Arial,8,N
+ROLEFont color=0, 0, 0
+CARDFont=Arial,8,N
+CARDFont color=0, 0, 0
+Line style=2
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\CDMINHR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AutoAdjustToText=No
+Keep aspect=No
+Keep center=No
+Keep size=Yes
+Width=1575
+Height=1000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LINH]
+Line style=2
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\CDM]</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>15</a:PaperSource>
+<c:Symbols>
+<o:RelationshipSymbol Id="o5">
+<a:Rect>((-9901,10431), (31049,12477))</a:Rect>
+<a:ListOfPoints>((-9901,11231),(31049,11231))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o8"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o9">
+<a:Rect>((25388,-12900), (34912,-125))</a:Rect>
+<a:ListOfPoints>((30150,-125),(30150,-12900))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o11"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o12"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o13">
+<a:Rect>((-11326,-694), (30279,1352))</a:Rect>
+<a:ListOfPoints>((-11326,106),(30279,106))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o14"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o15"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o16">
+<a:Rect>((-10598,4528), (9713,9864))</a:Rect>
+<a:ListOfPoints>((9713,5774),(-8273,5774),(-8273,9864))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o17"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o18"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o19">
+<a:Rect>((9819,1146), (30604,7145))</a:Rect>
+<a:ListOfPoints>((9819,5899),(28279,5899),(28279,1146))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o17"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o20"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o21">
+<a:Rect>((1200,-10470), (24721,-1622))</a:Rect>
+<a:ListOfPoints>((1200,-9224),(22471,-9224),(22471,-1622))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o22"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o23"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o24">
+<a:Rect>((-12754,-10718), (1200,-8671))</a:Rect>
+<a:ListOfPoints>((1200,-9918),(-12754,-9918))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o22"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o26"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o27">
+<a:Rect>((-33808,-149), (-29008,7083))</a:Rect>
+<a:ListOfPoints>((-31408,-149),(-31408,7083))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o28"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o29"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o30"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o31">
+<a:Rect>((-31698,-7683), (-26898,-149))</a:Rect>
+<a:ListOfPoints>((-31202,-149),(-31202,-4201),(-27395,-4201),(-27395,-7683))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o28"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o32"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:EntitySymbol Id="o29">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-40876,6903), (-23174,13195))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o33"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o6">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-18893,9527), (-909,13871))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o34"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o7">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((19248,6604), (42850,14844))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o35"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o10">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((21699,-2297), (38601,2047))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o36"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o11">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((20719,-16046), (39581,-9754))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o37"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o14">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-20023,-2921), (-2629,3371))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o38"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o25">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-32501,-14733), (-12351,-7467))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o39"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o17">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((4804,3774), (14624,7773))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o40"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o22">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-2859,-11224), (5261,-7225))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o41"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o28">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-35993,-2149), (-26561,1850))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o42"/>
+</c:Object>
+</o:EntitySymbol>
+</c:Symbols>
+</o:LogicalDiagram>
+</c:LogicalDiagrams>
+<c:DefaultDiagram>
+<o:LogicalDiagram Ref="o4"/>
+</c:DefaultDiagram>
+<c:Entities>
+<o:Entity Id="o33">
+<a:ObjectID>13CA5237-0153-42AB-9A64-671B82F962D5</a:ObjectID>
+<a:Name>Users</a:Name>
+<a:Code>USERS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {2266BF14-D3B6-499C-8EDC-83A297538D83}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o43">
+<a:ObjectID>228AA00C-1F46-45D1-B39C-C7EE0515C76D</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {D32438C2-8150-4471-B573-38855E94144A}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o44"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o43"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o44">
+<a:ObjectID>841FE74B-B920-4CF1-87E6-756F73CAA00C</a:ObjectID>
+<a:Name>id_utilisateur</a:Name>
+<a:Code>ID_UTILISATEUR</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {F6614E3A-D69F-48AA-99DC-4972B3A5EF1B}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o45">
+<a:ObjectID>B493BAF5-577C-4976-BC26-01980DF68CF7</a:ObjectID>
+<a:Name>email</a:Name>
+<a:Code>EMAIL</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {B3BDDB61-D4E3-46BD-A8D7-D85A4FDB144D}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o46">
+<a:ObjectID>D8999DAA-91DF-4B72-AF68-F0FD28F45F5E</a:ObjectID>
+<a:Name>date_creation</a:Name>
+<a:Code>DATE_CREATION</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {D9D99713-D643-44FE-ADEA-95FDF4B35251}
+DAT 1780141828</a:History>
+<a:DataType>D</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o47">
+<a:ObjectID>53D0C81B-8923-4AFA-A991-F03E9BB20F26</a:ObjectID>
+<a:Name>langue_preferee</a:Name>
+<a:Code>LANGUE_PREFEREE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {0AFC301A-1C2E-4029-8BDE-402D8421124A}
+DAT 1780141828</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o48">
+<a:ObjectID>6976B33A-9C2B-47F1-9E77-70E882C8A2F3</a:ObjectID>
+<a:Name>statut_financier</a:Name>
+<a:Code>STATUT_FINANCIER</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {AAF5807F-FABC-43F7-B858-6744E7BB887F}
+DAT 1780141828</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o34">
+<a:ObjectID>890FB0B3-9F62-49B3-81C0-7B306D9997A0</a:ObjectID>
+<a:Name>Pathologies</a:Name>
+<a:Code>PATHOLOGIES</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {37133379-0CEA-4A95-9D33-9F4E67E22C89}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o49">
+<a:ObjectID>39AD2386-CD5B-4E37-8359-C4F81AFE7D9A</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {0FD02A83-9C9B-4705-80E1-D40148467B40}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o50"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o49"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o50">
+<a:ObjectID>75D16555-DE3B-459E-B4CB-FC427C34C612</a:ObjectID>
+<a:Name>id_pathologie</a:Name>
+<a:Code>ID_PATHOLOGIE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {4F7B7D73-5DA1-4091-8E0E-73F35EAB2400}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o51">
+<a:ObjectID>1DD3D15B-97E5-4B41-9D0A-CBD475B4264A</a:ObjectID>
+<a:Name>specialite_requise</a:Name>
+<a:Code>SPECIALITE_REQUISE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {BCAF7CFA-D87A-4D76-AA8A-8F26155D862A}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o52">
+<a:ObjectID>B95084C4-7584-4706-971B-638AD36977F5</a:ObjectID>
+<a:Name>categorie</a:Name>
+<a:Code>CATEGORIE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {420927B6-57DA-4025-B433-3FF3081A1F95}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o35">
+<a:ObjectID>34697DB8-5C84-4409-94D5-397B940C7580</a:ObjectID>
+<a:Name>Pathology_translations</a:Name>
+<a:Code>PATHOLOGY_TRANSLATIONS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {5F8A908A-F80E-4C97-8E7D-1DDF97A9305C}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o53">
+<a:ObjectID>333D3547-781C-4010-ADEF-805F27B2C068</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {2D580D91-313F-4E43-8F8A-9F2743F88E61}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o54"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o53"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o54">
+<a:ObjectID>5D16AE9E-C5A3-44A5-A8F1-3D4F516489F3</a:ObjectID>
+<a:Name>id_trad_patho</a:Name>
+<a:Code>ID_TRAD_PATHO</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {57DB6205-E5CD-4D0B-9C35-5B6133A9610B}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o55">
+<a:ObjectID>8FB33606-A634-44EA-B59D-95476ADB10B4</a:ObjectID>
+<a:Name>id_pathologie</a:Name>
+<a:Code>ID_PATHOLOGIE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {4F7B7D73-5DA1-4091-8E0E-73F35EAB2400},{BC7B137C-B0A0-4FEC-BF98-63FC66B890F8}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o56">
+<a:ObjectID>79900C34-E32E-4D94-B48E-809A5E65490A</a:ObjectID>
+<a:Name>code_langue</a:Name>
+<a:Code>CODE_LANGUE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {D4366EF4-7AD0-454A-ADC2-57B35D4FBE50}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o57">
+<a:ObjectID>372A6CBB-7FD8-4FC8-87F9-B3417CA31F54</a:ObjectID>
+<a:Name>nom_maladie</a:Name>
+<a:Code>NOM_MALADIE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {71820740-7225-4C19-91B1-B9494C18EFD0}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o58">
+<a:ObjectID>086CEE5E-CDD1-4782-9E0B-3BFB8948530C</a:ObjectID>
+<a:Name>description_symptomes</a:Name>
+<a:Code>DESCRIPTION_SYMPTOMES_</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {8142537D-FF0B-4A2A-A054-234B43157713}
+DAT 1780141828</a:History>
+<a:DataType>TXT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o59">
+<a:ObjectID>E1811101-F807-441C-BA87-926EA48E8BE7</a:ObjectID>
+<a:Name>description_causes</a:Name>
+<a:Code>DESCRIPTION_CAUSES</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {FCFEF7AD-AF42-4284-94A7-FFBFF2C8B2B6}
+DAT 1780141828</a:History>
+<a:DataType>TXT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o60">
+<a:ObjectID>B5A0E369-6C34-41D1-BBC0-3F8F9B8DC258</a:ObjectID>
+<a:Name>mecanisme_immunologique</a:Name>
+<a:Code>MECANISME_IMMUNOLOGIQUE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {94434328-A017-4176-8783-B0CD0E87847D}
+DAT 1780141828</a:History>
+<a:DataType>TXT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o36">
+<a:ObjectID>ABBEAB36-AFBF-4E48-A0A9-267B7B9E0DB7</a:ObjectID>
+<a:Name>Medical_acts</a:Name>
+<a:Code>MEDICAL_ACTS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {DCBD57F9-1D5F-4BEB-BE7B-4E16EB2BBC28}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o61">
+<a:ObjectID>D2C09229-9C76-42F9-AF1A-7F34F3297BDB</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C5E10F03-D7F9-4B39-98E1-A3C74967EF02}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o62"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o61"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o62">
+<a:ObjectID>AB9D507D-9A74-49D8-A440-273CAA6024D2</a:ObjectID>
+<a:Name>id_acte</a:Name>
+<a:Code>ID_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C22E1AE6-5EFD-4A6B-994E-37E41AF43726}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o63">
+<a:ObjectID>8D0379A2-D87A-4759-B764-31A779EA3369</a:ObjectID>
+<a:Name>type_acte</a:Name>
+<a:Code>TYPE_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {20C192F9-17E2-4A7E-8175-A12D30F376CD}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o64">
+<a:ObjectID>50E85B38-C3DC-4307-9DCE-DD95AAA0D647</a:ObjectID>
+<a:Name>niveau_priorite</a:Name>
+<a:Code>NIVEAU_PRIORITE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {CD9BB97B-C2F8-4FE9-8CCE-E20D4A27F5AE}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o37">
+<a:ObjectID>2E3C6914-98F4-4F0D-B841-18A18C7750EC</a:ObjectID>
+<a:Name>Medical_act_translations</a:Name>
+<a:Code>MEDICAL_ACT_TRANSLATIONS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {87389AB2-BEB0-4ABC-AB59-AD04AA66C65D}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o65">
+<a:ObjectID>EB88CB80-FAC6-4597-9774-938E956C68E7</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {9EE2FD28-3C2A-4539-AAFC-7D553D6CE745}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o66"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o65"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o66">
+<a:ObjectID>66C7005E-8D5B-4944-B98C-67677641D15B</a:ObjectID>
+<a:Name>id_trad_acte</a:Name>
+<a:Code>ID_TRAD_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {B5D3B78D-8DD5-47DB-8335-3E35BB4181C7}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o67">
+<a:ObjectID>59C1B17A-CA3B-48EF-A803-9B012FB7E074</a:ObjectID>
+<a:Name>id_acte</a:Name>
+<a:Code>ID_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C22E1AE6-5EFD-4A6B-994E-37E41AF43726},{02DE55D3-0BD9-4B64-A6B6-0924B1B7B91D}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o68">
+<a:ObjectID>93ADB50B-C9D8-4516-B58E-EEEADC9538F2</a:ObjectID>
+<a:Name>code_langue</a:Name>
+<a:Code>CODE_LANGUE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {78DE2072-66A6-4990-A67F-1B1FF5EFA60C}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o69">
+<a:ObjectID>9A99BAF9-068C-4ACE-B9CF-296D7F3B0DCA</a:ObjectID>
+<a:Name>nom_acte</a:Name>
+<a:Code>NOM_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {E957878E-3C8E-4301-861B-8BCA475FC2F2}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o70">
+<a:ObjectID>CD1199CE-B78F-4D42-A65E-E537E50E1B2B</a:ObjectID>
+<a:Name>description_acte</a:Name>
+<a:Code>DESCRIPTION_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {8BE1811C-66CC-4DFE-9806-4C35BD019372}
+DAT 1780141828</a:History>
+<a:DataType>TXT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o38">
+<a:ObjectID>0C74F47C-6B40-477E-B310-4641CEC63718</a:ObjectID>
+<a:Name>Financial_costs</a:Name>
+<a:Code>FINANCIAL_COSTS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C12EFE02-04FF-4BB2-8896-7C348FCC58C8}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o71">
+<a:ObjectID>6C12A10B-535C-43F4-B8B1-9B561E0C6225</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {47EB8621-C928-41FB-876E-CDB8C71424AE}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o72"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o71"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o72">
+<a:ObjectID>F77B9CDB-805F-4FC0-BDF0-20F2B128A6F7</a:ObjectID>
+<a:Name>id_cout</a:Name>
+<a:Code>ID_COUT</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {FEF11033-4E24-4795-9BA2-96BC35554B58}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o73">
+<a:ObjectID>2CD7AF29-CAB0-436D-81F9-EEBEF57412AA</a:ObjectID>
+<a:Name>id_acte</a:Name>
+<a:Code>ID_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C22E1AE6-5EFD-4A6B-994E-37E41AF43726},{E9D18C42-B92B-482B-9D4F-0D09381F6295}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o74">
+<a:ObjectID>93A7A418-E6FC-46F6-92E1-4767DB12BCC1</a:ObjectID>
+<a:Name>code_pays</a:Name>
+<a:Code>CODE_PAYS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {D2190042-8B81-4F79-A230-73B4292D5ADA}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o75">
+<a:ObjectID>3A57F6CC-6525-46C5-BA62-52F1800E6718</a:ObjectID>
+<a:Name>cout_moyen</a:Name>
+<a:Code>COUT_MOYEN_</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {4592559C-82C1-48CA-AE7C-6829E050D70D}
+DAT 1780141828</a:History>
+<a:DataType>DC</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o76">
+<a:ObjectID>8C869C89-51E4-46D6-A333-CF1077A68996</a:ObjectID>
+<a:Name>devise</a:Name>
+<a:Code>DEVISE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {9BECFAD6-76F3-4EFC-8CD0-90B4F434A1FE}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o39">
+<a:ObjectID>F7E72430-F210-4D1F-AA75-D83639CC1CF6</a:ObjectID>
+<a:Name>medical_centers</a:Name>
+<a:Code>MEDICAL_CENTERS</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {4C72D281-0C00-4B30-BF87-EB0415F6120F}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o77">
+<a:ObjectID>2F34C515-ABC5-4A02-AC31-72594BDD905D</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {AB957179-E669-4880-959A-8CE5E3171BFC}
+DAT 1780141828</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o78"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o77"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o78">
+<a:ObjectID>953017C6-2B5F-4B46-B905-5D13605FDB6E</a:ObjectID>
+<a:Name>id_centre</a:Name>
+<a:Code>ID_CENTRE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {3ED60DC5-33C3-4E29-977F-0CD2DDCFA1D7}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o79">
+<a:ObjectID>53A72916-DC6C-42BB-BDD7-CDC12BDB4170</a:ObjectID>
+<a:Name>nom_centre</a:Name>
+<a:Code>NOM_CENTRE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {3CF81151-CA01-47D9-A3B0-E801EBCC8E2B}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o80">
+<a:ObjectID>1B9862B5-F81D-4B0F-B66F-2DA866C7922B</a:ObjectID>
+<a:Name>type_centre</a:Name>
+<a:Code>TYPE_CENTRE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {510DC0DB-0C67-4411-995D-9931660377AC}
+DAT 1780141828</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o81">
+<a:ObjectID>A68B7088-2B8D-4026-8E9E-AF5CFA82D047</a:ObjectID>
+<a:Name>latitude</a:Name>
+<a:Code>LATITUDE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {77792831-7DF4-452C-A5BC-81569D204A31}
+DAT 1780141828</a:History>
+<a:DataType>DC</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o82">
+<a:ObjectID>D8155C1E-A7AB-4D8A-8AAB-48D9B1E6A08E</a:ObjectID>
+<a:Name>longitude</a:Name>
+<a:Code>LONGITUDE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {8B30A82E-C64B-48F6-A21F-1BDF3645201C}
+DAT 1780141828</a:History>
+<a:DataType>DC</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o83">
+<a:ObjectID>BE59BA83-3CBC-46BD-8BD0-064283FB08E7</a:ObjectID>
+<a:Name>specialites_disponibles</a:Name>
+<a:Code>SPECIALITES_DISPONIBLES</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {F2DBB75E-E805-4A0F-9AF1-2574F53FB7AF}
+DAT 1780141828</a:History>
+<a:DataType>TXT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o40">
+<a:ObjectID>9E7AFC91-7571-49AD-9222-FFEBB6F3B32F</a:ObjectID>
+<a:Name>REQUIERT</a:Name>
+<a:Code>REQUIERT</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {BDD79765-2250-4749-A4B0-8909EB6398E1}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o84">
+<a:ObjectID>2D53DA72-6F1C-4509-9D0C-80BF24E6687F</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o85"/>
+<o:EntityAttribute Ref="o86"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o84"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o85">
+<a:ObjectID>FA27B45A-057B-40F1-B331-C0C35D89EE80</a:ObjectID>
+<a:Name>id_pathologie</a:Name>
+<a:Code>ID_PATHOLOGIE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {4F7B7D73-5DA1-4091-8E0E-73F35EAB2400},{10063A32-DEB7-46F1-A1B3-51F883598874}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o86">
+<a:ObjectID>A24A185F-3F0A-4031-93CF-9334E5C9623E</a:ObjectID>
+<a:Name>id_acte</a:Name>
+<a:Code>ID_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C22E1AE6-5EFD-4A6B-994E-37E41AF43726},{37BB4CAE-5569-4612-8D21-A75C763D5638}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o41">
+<a:ObjectID>C64E082A-CB58-4B03-BC46-CBA0FBFD5A5A</a:ObjectID>
+<a:Name>PROPOSE</a:Name>
+<a:Code>PROPOSE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {7C855073-F831-4119-AE49-C84CE8669B6C}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o87">
+<a:ObjectID>AD86AC72-CEFD-4F20-BDF5-86107AF128B2</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o88"/>
+<o:EntityAttribute Ref="o89"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o87"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o88">
+<a:ObjectID>720DE151-9FC9-45F3-A47B-3619A3DAE21E</a:ObjectID>
+<a:Name>id_acte</a:Name>
+<a:Code>ID_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {C22E1AE6-5EFD-4A6B-994E-37E41AF43726},{7FF8F539-2A2A-46A9-8977-83C925226D0D}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o89">
+<a:ObjectID>A3FDE0CC-3088-4919-98A6-443930349EBD</a:ObjectID>
+<a:Name>id_centre</a:Name>
+<a:Code>ID_CENTRE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {3ED60DC5-33C3-4E29-977F-0CD2DDCFA1D7},{BF57F706-1EBC-42B5-890F-9BA176CCF2FC}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o42">
+<a:ObjectID>F29CCD0B-354E-4CCF-9B58-699059F189C3</a:ObjectID>
+<a:Name>CONSULTE</a:Name>
+<a:Code>CONSULTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {0768736A-518E-46A7-8CF2-62C8F3CD1DFD}
+DAT 1780141828</a:History>
+<c:Identifiers>
+<o:Identifier Id="o90">
+<a:ObjectID>A772E35E-35EB-4CE6-B04A-0B14DDEE6EE5</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o91"/>
+<o:EntityAttribute Ref="o92"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o90"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o91">
+<a:ObjectID>21F32F21-912D-4AEF-9B62-7458E2A33F78</a:ObjectID>
+<a:Name>id_utilisateur</a:Name>
+<a:Code>ID_UTILISATEUR</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {F6614E3A-D69F-48AA-99DC-4972B3A5EF1B},{A429E3D7-BE64-4574-8BD5-A46F03DF2C48}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o92">
+<a:ObjectID>E17CC514-A91D-4609-B050-1A811542925E</a:ObjectID>
+<a:Name>id_centre</a:Name>
+<a:Code>ID_CENTRE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {3ED60DC5-33C3-4E29-977F-0CD2DDCFA1D7},{6CA56790-94B9-40CF-87E4-530E89492368}
+DAT 1780141828</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+</c:Entities>
+<c:Relationships>
+<o:Relationship Id="o8">
+<a:ObjectID>22BAA8AA-1327-4EE7-A0BC-E7212136FB9E</a:ObjectID>
+<a:Name>POSSÈDE_TRAD_PATHO</a:Name>
+<a:Code>POSSEDE_TRAD_PATHO</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {BC7B137C-B0A0-4FEC-BF98-63FC66B890F8}
+DAT 1780141828</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o35"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o34"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o93">
+<a:ObjectID>A1B149D9-CA23-4F72-8E8F-7B91A983F558</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o50"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o55"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o49"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o12">
+<a:ObjectID>DA8663F0-E5CA-47C1-8B5B-52FDCC4490BF</a:ObjectID>
+<a:Name>POSSÈDE_TRAD_ACTE</a:Name>
+<a:Code>POSSEDE_TRAD_ACTE</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {02DE55D3-0BD9-4B64-A6B6-0924B1B7B91D}
+DAT 1780141828</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o37"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o36"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o94">
+<a:ObjectID>96A1C5C3-01A1-4952-9789-4CC3028F2DB9</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o62"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o67"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o61"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o15">
+<a:ObjectID>AF9B8862-EC8E-466F-A1E5-0DB5FBD0E985</a:ObjectID>
+<a:Name>A_POUR_PRIX</a:Name>
+<a:Code>A_POUR_PRIX</a:Code>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:History>ORG {E9D18C42-B92B-482B-9D4F-0D09381F6295}
+DAT 1780141828</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o36"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o38"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o95">
+<a:ObjectID>A6F1A8C2-2C68-4C9D-BC77-D5383184BB7A</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o62"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o73"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o61"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o18">
+<a:ObjectID>CAD6FDD2-BB4F-4B21-B202-9D4977FE01E0</a:ObjectID>
+<a:Name>REQUIERT</a:Name>
+<a:Code>REQUIERT2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {10063A32-DEB7-46F1-A1B3-51F883598874}
+DAT 1780141828</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o34"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o40"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o96">
+<a:ObjectID>5A4A9D90-3B49-4F23-962A-FC63688A7CED</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o50"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o85"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o49"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o20">
+<a:ObjectID>5BD94B61-A18E-4C93-B8D8-196B41AE51DA</a:ObjectID>
+<a:Name>REQUIERT</a:Name>
+<a:Code>REQUIERT</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {37BB4CAE-5569-4612-8D21-A75C763D5638}
+DAT 1780141828</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o36"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o40"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o97">
+<a:ObjectID>CB6372F0-D479-4916-AA2A-59443A36D5B5</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o62"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o86"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o61"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o23">
+<a:ObjectID>FC92D842-9CB2-4C56-9C42-893D618E0532</a:ObjectID>
+<a:Name>PROPOSE</a:Name>
+<a:Code>PROPOSE2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {7FF8F539-2A2A-46A9-8977-83C925226D0D}
+DAT 1780141828</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o36"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o41"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o98">
+<a:ObjectID>BC0E91E4-FADF-46A5-A80F-6B74DEC0CD67</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o62"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o88"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o61"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o26">
+<a:ObjectID>8144136D-631F-42D7-976C-014577F1203F</a:ObjectID>
+<a:Name>PROPOSE</a:Name>
+<a:Code>PROPOSE</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {BF57F706-1EBC-42B5-890F-9BA176CCF2FC}
+DAT 1780141828</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o39"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o41"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o99">
+<a:ObjectID>905D460F-29B8-488A-95AE-9F35C04C0AB6</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o78"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o89"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o77"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o30">
+<a:ObjectID>6CC0E5E9-1B85-4B29-BCE3-58639C3DD90A</a:ObjectID>
+<a:Name>CONSULTE</a:Name>
+<a:Code>CONSULTE2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {A429E3D7-BE64-4574-8BD5-A46F03DF2C48}
+DAT 1780141828</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o33"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o100">
+<a:ObjectID>602F3C5F-A286-4566-9A2C-7FE7F7FB8D23</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o44"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o91"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o43"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o32">
+<a:ObjectID>3086034E-BE0F-4784-B892-8408C17E4F47</a:ObjectID>
+<a:Name>CONSULTE</a:Name>
+<a:Code>CONSULTE</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {6CA56790-94B9-40CF-87E4-530E89492368}
+DAT 1780141828</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o39"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o101">
+<a:ObjectID>C545D88C-539A-4BFC-930E-FD3A532E77AC</a:ObjectID>
+<a:CreationDate>1780141827</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141827</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o78"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o92"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o77"/>
+</c:ParentIdentifier>
+</o:Relationship>
+</c:Relationships>
+<c:TargetModels>
+<o:TargetModel Id="o102">
+<a:ObjectID>AFAC9561-5110-4DEA-9583-A4309C2F8294</a:ObjectID>
+<a:Name>PathoAtlas</a:Name>
+<a:Code>PATHOATLAS</a:Code>
+<a:CreationDate>1780141828</a:CreationDate>
+<a:Creator>LEATITIA</a:Creator>
+<a:ModificationDate>1780141828</a:ModificationDate>
+<a:Modifier>LEATITIA</a:Modifier>
+<a:TargetModelURL>file:///C|/Users/LEATITIA/Desktop/pathoatlas/PathoAtlas.mcd</a:TargetModelURL>
+<a:TargetModelID>046F5CA2-243D-42C6-A279-0DEB16756D55</a:TargetModelID>
+<a:TargetModelClassID>1E597170-9350-11D1-AB3C-0020AF71E433</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
